@@ -1,41 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- define que este documento é um documento HTML5 -->
+<html lang="pt-br"> <!-- é o elemento raiz de uma página HTML -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - HTML e CSS</title>
+<head> <!--contém meta informações sobre a página HTML -->
+    <meta charset="UTF-8"> <!-- especifica a codificação de caracteres para o documento HTML-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- configura a janela de visualização da página-->
+    <title>Contato - HTML e CSS</title> <!-- especifica um título para a página HTML -->
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
+<body> <!-- define o corpo do documento e é um contêiner para todo o conteúdo visível-->
+    <header> <!-- Define o cabeçalho-->
+        <nav> <!-- Define a barra de navegação-->
+            <ul> <!-- Lista não ordenada-->
+                <li><a href="../index.html">Início</a></li> <!-- define um item da lista-->
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
 
-        <div class="dark-mode">
-            <label for="darkModeToggle">Modo Escuro</label>
-            <input type="checkbox" id="darkModeToggle">
+        <div class="dark-mode"> <!-- tag define uma divisão ou uma seção-->
+            <label for="darkModeToggle">Modo Escuro</label> <!-- tag define um rótulo para elementos-->
+            <input type="checkbox" id="darkModeToggle"> <!-- tag especifica um campo de entrada onde o usuário pode inserir dados-->
         </div>
     </header>
 
-    <main>
+    <main> <!-- especifica o conteúdo principal da página-->
         <div class="visit-counter">
             Número de visita: <span id="visitCount">0</span>
         </div>
 
-        <h1>Entre em Contato</h1>
-        <section class="contato">
+        <h1>Entre em Contato</h1> <!-- tag para criar títulos importantes-->
+        <section class="contato"> <!-- define uma seção na página -->
             <div class="info-contato">
-                <h2>Informações de Contato</h2>
+                <h2>Informações de Contato</h2> <!-- tag para criar títulos de segunda importancia-->
                 <div class="contato-detalhes">
                     <div class="contato-item">
-                        <h3>Email</h3>
-                        <p>curso@exemplo.com</p>
+                        <h3>Email</h3> <!-- tag para criar títulos de terceira importancia-->
+                        <p>curso@exemplo.com</p> <!-- tag de parágrafo-->
                     </div>
                     <div class="contato-item">
                         <h3>Telefone</h3>
@@ -50,8 +50,8 @@
 
             <div class="form-section">
                 <h2>Formulário de Inscrição</h2>
-                <form class="formulario">
-                    <div class="form-grupo">
+                <form class="formulario"> <!-- tag para criar formulário-->
+                    <div class="form-grupo"> 
                         <label for="nome">Nome Completo:</label>
                         <input type="text" id="nome" name="nome" required>
                     </div>
@@ -78,17 +78,17 @@
                         </label>
                     </div>
 
-                    <button type="submit">Enviar Inscrição</button>
+                    <button type="submit">Enviar Inscrição</button> <!-- tag para criar um botão-->
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer> <!-- Define o rodapé da página-->
         <p>&copy; 2025 Curso HTML e CSS</p>
     </footer>
 
-    <script src="../js/main.js"></script>
-</body>
+    <script src="../js/main.js"></script> <!-- link para fazer a ligação do html com o JavaScript -->
+</body> 
 
 </html>
