@@ -1,10 +1,11 @@
 <!DOCTYPE html> <!-- define que este documento é um documento HTML5 -->
-<html lang="pt-br"> <!-- é o elemento raiz de uma página HTML -->
+<html lang="pt-BR"> <!-- é o elemento raiz de uma página HTML -->
 
 <head> <!--contém meta informações sobre a página HTML -->
     <meta charset="UTF-8"> <!-- especifica a codificação de caracteres para o documento HTML-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- configura a janela de visualização da página-->
-    <title>Contato - HTML e CSS</title> <!-- especifica um título para a página HTML -->
+    <title>Contato - Curso HTML e CSS</title> <!-- especifica um título para a página HTML -->
+    <link rel="stylesheet" href="../css/style.css"> <!--link para fazer a ligação do html com o css -->
 </head>
 
 <body> <!-- define o corpo do documento e é um contêiner para todo o conteúdo visível-->
@@ -16,8 +17,7 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-
-        <div class="dark-mode"> <!-- tag define uma divisão ou uma seção-->
+        <div class="dark-mode-toggle"> <!-- tag define uma divisão ou uma seção-->
             <label for="darkModeToggle">Modo Escuro</label> <!-- tag define um rótulo para elementos-->
             <input type="checkbox" id="darkModeToggle"> <!-- tag especifica um campo de entrada onde o usuário pode inserir dados-->
         </div>
@@ -25,7 +25,7 @@
 
     <main> <!-- especifica o conteúdo principal da página-->
         <div class="visit-counter">
-            Número de visita: <span id="visitCount">0</span>
+            Número de visitas: <span id="visitCount">0</span>
         </div>
 
         <h1>Entre em Contato</h1> <!-- tag para criar títulos importantes-->
@@ -43,7 +43,7 @@
                     </div>
                     <div class="contato-item">
                         <h3>Horário de Atendimento</h3>
-                        <p>Segunda a Sexta: 9h ás 18h</p>
+                        <p>Segunda a Sexta: 9h às 18h</p>
                     </div>
                 </div>
             </div>
@@ -51,24 +51,24 @@
             <div class="form-section">
                 <h2>Formulário de Inscrição</h2>
                 <form class="formulario"> <!-- tag para criar formulário-->
-                    <div class="form-grupo"> 
+                    <div class="form-grupo">
                         <label for="nome">Nome Completo:</label>
                         <input type="text" id="nome" name="nome" required>
                     </div>
-
+                    
                     <div class="form-grupo">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-grupo">
-                        <label for="telefone">telefone:</label>
-                        <input type="text" id="telefone" name="telefone" required>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
                     </div>
-
+                    
                     <div class="form-grupo">
                         <label for="mensagem">Por que você quer fazer o curso?</label>
-                        <textarea name="mensagem" id="mensagem" required></textarea>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
                     </div>
 
                     <div class="form-grupo">
@@ -77,7 +77,7 @@
                             Desejo receber novidades sobre próximos cursos
                         </label>
                     </div>
-
+                    
                     <button type="submit">Enviar Inscrição</button> <!-- tag para criar um botão-->
                 </form>
             </div>
@@ -85,10 +85,9 @@
     </main>
 
     <footer> <!-- Define o rodapé da página-->
-        <p>&copy; 2025 Curso HTML e CSS</p>
+        <p>&copy; 2024 Curso HTML e CSS</p>
     </footer>
 
     <script src="../js/main.js"></script> <!-- link para fazer a ligação do html com o JavaScript -->
-</body> 
-
+</body>
 </html>
