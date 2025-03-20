@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aprendendo JavaScript</h1>
+        <section class="calculator">
+            <h2>calculadora</h2>
+            <input type="number" id="num1" placeholder="Primeiro número">
+            <input type="number" id="num2" placeholder="Segundo número">
+            <div class="buttons">
+                <button onclick="calculate('+')" class="calculete">Soma</button>
+                <button onclick="calculate('-')" class="calculete">Subtrair</button>
+                <button onclick="calculate('*')" class="calculete">Mútiplicar</button>
+                <button onclick="calculate('/')" class="calculete">Dividir</button>
+            </div>
+            <p id="result"></p>
+        </section>
+
+        <section class="text-tools">
+
+            <h2>Manipulação de texto</h2>
+            <input type="text" id="textInput" placeholder="Digite um texto">
+
+            <div class="buttons">
+                <button class="btn" onclick="transformText('upper')">Maiúsculas</button>
+                <button class="btn" onclick="transformText('lower')">Minúsculas</button>
+                <button class="btn" onclick="countChars()">Contar Caracteres</button>
+            </div>
+            <p id="textResult"></p>
+        </section>
+
+        <section class="color-changer">
+            <h2>Mudança de Cores</h2>
+            <div class="color-box" id="colorBox">
+                <p>Clique para mudar a cor!</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
