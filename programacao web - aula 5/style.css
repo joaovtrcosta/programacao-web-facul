@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    transition: .3s linear;
+}
+
+body {
+    padding: 20px;
+    background: linear-gradient(180deg, rgb(2, 0, 41) 36%, rgb(9, 6, 59) 52%, rgba(91, 0, 164, 1) 100%);
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 18px rgb(127, 8, 224);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: -1px 1px 18px rgb(141, 1, 255);
+}
+
+section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+input {
+    width: 100%;
+    line-height: 2;
+    outline: none;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.operation,
+.btn {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(127, 8, 224);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: -1px 1px 7px rgb(141, 1, 255);
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    min-width: 120px; /* Ensure button width is consistent */
+    text-align: center;
+}
+
+.operation:hover,
+.btn:hover {
+    background-color: rgb(100, 5, 177);
+}
+
+.color-changer p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .calculator,
+    .text-tools,
+    .color-changer {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px; /* Adjust gap for smaller screens */
+        margin-top: 20px;
+    }
+
+    .operation,
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .calculator,
+    .text-tools,
+    .color-changer {
+        padding: 15px;
+    }
+
+    .operation,
+    .btn {
+        font-size: 14px;
+    }
+}
